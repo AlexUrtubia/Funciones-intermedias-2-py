@@ -51,7 +51,9 @@ dojo = {
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 def printInfo(some_list):
-    for k,v in range (len(some_list)):
-        print(key,value)
-
+    for i in some_list:
+        print(len(some_list[i]),i.upper())
+        for j in range (len(dojo[i])):
+            print(some_list[i][j])
+        print()
 printInfo(dojo)
